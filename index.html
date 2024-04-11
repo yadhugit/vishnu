@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vishnu Anand Portfolio</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome icons -->
+  <style>
+    /* Custom CSS */
+    /* Navbar */
+    .navbar {
+      background-color: transparent !important; /* Transparent background */
+    }
+    .navbar-brand {
+      font-size: 24px; /* Increase font size */
+      font-weight: bold; /* Make text bold */
+      color: #fff !important; /* White text */
+    }
+    .navbar-brand:hover {
+      color: #ffc107 !important; /* Yellow hover color */
+    }
+
+    /* Main Content */
+    /* About, Contact sections */
+    section {
+      margin-bottom: 50px;
+      position: relative;
+    }
+    section h2 {
+      margin-bottom: 20px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: transparent !important; /* Transparent background */
+      color: #fff; /* White text */
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    /* Body Background */
+    body {
+      background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); /* Gradient background */
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+      padding-bottom: 60px; /* Height of the footer */
+    }
+
+    /* Animation */
+    @keyframes gradient {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    /* About Me Content */
+    .about-content {
+      color: #fff; /* White text */
+      transition: color 0.3s ease; /* Smooth transition on hover */
+    }
+
+    .about-content:hover {
+      color: #ffc107; /* Yellow hover color */
+    }
+
+    /* Contact Icons */
+    .contact-icons {
+      font-size: 24px;
+      color: #fff;
+    }
+
+    .contact-icons a {
+      margin-right: 15px;
+    }
+
+    /* Photo Session */
+    .photo-session {
+      margin-bottom: 20px;
+    }
+
+    .photo-session img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    @media (min-width: 768px) {
+      .photo-session img {
+        max-width: 80%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <a class="navbar-brand" href="#">Vishnu Anand</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Photo Session -->
+      <div class="col-md-4">
+        <div class="photo-session">
+          <img src="vishnu.jpeg" alt="Vishnu Anand Photo">
+        </div>
+      </div>
+      <!-- About Section -->
+      <div class="col-md-8">
+        <section id="about">
+          <h3>About Me</h3>
+          <div class="about-content">
+           
+            <p>Vishnu Anand, an electrical engineer residing in Canada, embodies a spirit of innovation and expertise in his field. Hailing from India, his fascination with electricity ignited at a young age, propelling him towards a career dedicated to shaping the future through technological advancements. Upon relocating to Canada, Vishnu found himself in a dynamic environment conducive to his passion for innovation.</p>
+            <p>With a keen eye for cutting-edge solutions, Vishnu has become a respected figure in the engineering community. His work spans diverse sectors, from renewable energy to telecommunications, leaving a lasting impact on industries worldwide. Through his dedication to excellence, Vishnu has earned recognition and accolades, solidifying his reputation as a trailblazer in electrical engineering.</p>
+            <p>Beyond his professional endeavors, Vishnu is committed to giving back to the community by mentoring aspiring engineers, inspiring them to push the boundaries of what's possible. His journey serves as a testament to the power of passion and perseverance, illustrating the transformative potential of electrical engineering in shaping a brighter future.</p>
+            <p>As Vishnu continues to navigate the ever-evolving landscape of his field, his unwavering dedication to innovation illuminates the path for future generations of engineers, ensuring a legacy of progress and innovation.</p>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <div class="contact-icons">
+        <a href="https://www.instagram.com/vivek_vichu_?igsh=bnQ3czJpa3AyeHEw" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://wa.me/+1(548)883-1115" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer class="py-4 bg-dark text-white text-center">
+    <div class="container">
+      <p>&copy; 2024 Vishnu Anand. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JavaScript and dependencies -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
